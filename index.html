@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager - Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register for Task Manager</h1>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-message" id="email-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <div class="password-input-container">
+            <input type="password" id="password" name="password" required />
+            <button type="button" id="toggle-password">Show</button>
+          </div>
+          <div class="password-strength-indicator"></div>
+          <div>
+            <div class="strength-meter">
+              <div class="strength-bar" id="strength-bar"></div>
+            </div>
+
+            <p class="strength-text" id="strength-text"></p>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            required
+          />
+          <div class="error-message" id="confirm-password-error"></div>
+        </div>
+        <button type="submit" id="register-button">Register</button>
+        <div class="registration-status" id="registration-status"></div>
+      </form>
+      <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
