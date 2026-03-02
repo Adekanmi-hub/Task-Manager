@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+#registration-status.loading {
+    color: blue;
+}
+
 h1 {
   margin-bottom: 20px;
   color: #333;
